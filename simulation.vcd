@@ -1,0 +1,400 @@
+$date
+	Sun Feb 01 13:13:14 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_riscv $end
+$var wire 32 ! pc_out [31:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 32 $ pc_out [31:0] $end
+$var wire 1 # reset $end
+$var wire 1 % reg_write $end
+$var wire 32 & reg_data2 [31:0] $end
+$var wire 32 ' reg_data1 [31:0] $end
+$var wire 32 ( pc_next [31:0] $end
+$var wire 1 ) mem_write $end
+$var wire 1 * mem_to_reg $end
+$var wire 1 + mem_read $end
+$var wire 32 , instr [31:0] $end
+$var wire 32 - imm_ext [31:0] $end
+$var wire 32 . current_pc [31:0] $end
+$var wire 1 / branch $end
+$var wire 1 0 alu_zero $end
+$var wire 1 1 alu_src $end
+$var wire 32 2 alu_result [31:0] $end
+$var wire 2 3 alu_op [1:0] $end
+$var wire 32 4 alu_in2 [31:0] $end
+$var wire 4 5 alu_ctrl_signal [3:0] $end
+$scope module my_alu $end
+$var wire 32 6 b [31:0] $end
+$var wire 1 0 zero $end
+$var wire 4 7 alu_control [3:0] $end
+$var wire 32 8 a [31:0] $end
+$var reg 32 9 result [31:0] $end
+$upscope $end
+$scope module my_ctrl $end
+$var wire 7 : opcode [6:0] $end
+$var reg 2 ; alu_op [1:0] $end
+$var reg 1 1 alu_src $end
+$var reg 1 / branch $end
+$var reg 1 + mem_read $end
+$var reg 1 * mem_to_reg $end
+$var reg 1 ) mem_write $end
+$var reg 1 % reg_write $end
+$upscope $end
+$scope module my_dec $end
+$var wire 2 < alu_op [1:0] $end
+$var wire 3 = funct3 [2:0] $end
+$var wire 1 > funct7_5 $end
+$var reg 4 ? alu_control [3:0] $end
+$upscope $end
+$scope module my_imm $end
+$var wire 32 @ instr [31:0] $end
+$var wire 32 A imm_ext [31:0] $end
+$upscope $end
+$scope module my_mem $end
+$var wire 32 B instruction [31:0] $end
+$var wire 32 C addr [31:0] $end
+$upscope $end
+$scope module my_pc $end
+$var wire 1 " clk $end
+$var wire 32 D pc_next [31:0] $end
+$var wire 1 # reset $end
+$var reg 32 E pc [31:0] $end
+$upscope $end
+$scope module my_rf $end
+$var wire 1 " clk $end
+$var wire 5 F rd [4:0] $end
+$var wire 1 % rf_en $end
+$var wire 5 G rs1 [4:0] $end
+$var wire 5 H rs2 [4:0] $end
+$var wire 32 I write_data [31:0] $end
+$var wire 32 J reg_data2 [31:0] $end
+$var wire 32 K reg_data1 [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 K
+bx J
+b101 I
+b101 H
+b0 G
+b1 F
+b0 E
+b100 D
+b0 C
+b10100000000000010010011 B
+b101 A
+b10100000000000010010011 @
+b10 ?
+0>
+b0 =
+b0 <
+b0 ;
+b10011 :
+b101 9
+b0 8
+b10 7
+b101 6
+b10 5
+b101 4
+b0 3
+b101 2
+11
+00
+0/
+b0 .
+b101 -
+b10100000000000010010011 ,
+0+
+0*
+0)
+b100 (
+b0 '
+bx &
+1%
+b0 $
+1#
+0"
+b0 !
+$end
+#5
+1"
+#10
+0"
+#15
+1"
+#20
+0"
+0#
+#25
+b10001 2
+b10001 9
+b10001 I
+b1100 4
+b1100 6
+b101 '
+b101 8
+b101 K
+b1100 -
+b1100 A
+b10 F
+b1100 H
+b1 G
+b110000001000000100010011 ,
+b110000001000000100010011 @
+b110000001000000100010011 B
+b1000 (
+b1000 D
+b100 !
+b100 $
+b100 .
+b100 C
+b100 E
+1"
+#30
+0"
+#35
+x0
+bx 2
+bx 9
+bx I
+bx 4
+bx 6
+bx '
+bx 8
+bx K
+01
+0%
+bx -
+bx A
+bx F
+bx H
+bx G
+x>
+bx =
+bx :
+bx ,
+bx @
+bx B
+b1100 (
+b1100 D
+b1000 !
+b1000 $
+b1000 .
+b1000 C
+b1000 E
+1"
+#40
+0"
+#45
+b10000 (
+b10000 D
+b1100 !
+b1100 $
+b1100 .
+b1100 C
+b1100 E
+1"
+#50
+0"
+#55
+b10100 (
+b10100 D
+b10000 !
+b10000 $
+b10000 .
+b10000 C
+b10000 E
+1"
+#60
+0"
+#65
+b11000 (
+b11000 D
+b10100 !
+b10100 $
+b10100 .
+b10100 C
+b10100 E
+1"
+#70
+0"
+#75
+b11100 (
+b11100 D
+b11000 !
+b11000 $
+b11000 .
+b11000 C
+b11000 E
+1"
+#80
+0"
+#85
+b100000 (
+b100000 D
+b11100 !
+b11100 $
+b11100 .
+b11100 C
+b11100 E
+1"
+#90
+0"
+#95
+b100100 (
+b100100 D
+b100000 !
+b100000 $
+b100000 .
+b100000 C
+b100000 E
+1"
+#100
+0"
+#105
+b101000 (
+b101000 D
+b100100 !
+b100100 $
+b100100 .
+b100100 C
+b100100 E
+1"
+#110
+0"
+#115
+b101100 (
+b101100 D
+b101000 !
+b101000 $
+b101000 .
+b101000 C
+b101000 E
+1"
+#120
+0"
+#125
+b110000 (
+b110000 D
+b101100 !
+b101100 $
+b101100 .
+b101100 C
+b101100 E
+1"
+#130
+0"
+#135
+b110100 (
+b110100 D
+b110000 !
+b110000 $
+b110000 .
+b110000 C
+b110000 E
+1"
+#140
+0"
+#145
+b111000 (
+b111000 D
+b110100 !
+b110100 $
+b110100 .
+b110100 C
+b110100 E
+1"
+#150
+0"
+#155
+b111100 (
+b111100 D
+b111000 !
+b111000 $
+b111000 .
+b111000 C
+b111000 E
+1"
+#160
+0"
+#165
+b1000000 (
+b1000000 D
+b111100 !
+b111100 $
+b111100 .
+b111100 C
+b111100 E
+1"
+#170
+0"
+#175
+b1000100 (
+b1000100 D
+b1000000 !
+b1000000 $
+b1000000 .
+b1000000 C
+b1000000 E
+1"
+#180
+0"
+#185
+b1001000 (
+b1001000 D
+b1000100 !
+b1000100 $
+b1000100 .
+b1000100 C
+b1000100 E
+1"
+#190
+0"
+#195
+b1001100 (
+b1001100 D
+b1001000 !
+b1001000 $
+b1001000 .
+b1001000 C
+b1001000 E
+1"
+#200
+0"
+#205
+b1010000 (
+b1010000 D
+b1001100 !
+b1001100 $
+b1001100 .
+b1001100 C
+b1001100 E
+1"
+#210
+0"
+#215
+b1010100 (
+b1010100 D
+b1010000 !
+b1010000 $
+b1010000 .
+b1010000 C
+b1010000 E
+1"
+#220
+0"
