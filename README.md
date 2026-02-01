@@ -38,4 +38,6 @@ Plaintext
 
 └── docs/              # Layout screenshots and reports
 
+### 🖼️ Final GDSII Layout
+
 ![RISC-V Core GDSII Layout](RISCV_CORE%20Output.png)
