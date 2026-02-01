@@ -36,4 +36,4 @@ Plaintext
 └── docs/              # Layout screenshots and reports
 
 🖼️ Final Layout (GDSII)
-(layout_screenshot.png)
+(RISCV_CORE Output.png)
