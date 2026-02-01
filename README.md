@@ -31,8 +31,11 @@ This repository contains the full physical implementation of a 32-bit RISC-V cor
 Plaintext
 
 ├── rtl/               # Synthesizable Verilog files (ALU, RegFile, Control Unit, etc.)
+
 ├── scripts/           # config.json and pin_order.cfg
+
 ├── results/           # Final riscv_top.gds and gate-level netlist
+
 └── docs/              # Layout screenshots and reports
 
-
+![RISC-V Core GDSII Layout](RISCV_CORE%20Output.png)
