@@ -40,4 +40,4 @@ Plaintext
 
 ### 🖼️ Final GDSII Layout
 
-![RISC-V Core GDSII Layout](RISCV_CORE%20Output.png)
+![RISC-V Core GDSII Layout](RISCV_CORE.png)
