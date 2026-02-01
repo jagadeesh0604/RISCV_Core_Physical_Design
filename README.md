@@ -35,5 +35,4 @@ Plaintext
 ├── results/           # Final riscv_top.gds and gate-level netlist
 └── docs/              # Layout screenshots and reports
 
-🖼️ Final Layout (GDSII)
-(RISCV_CORE Output.png)
+🖼️![Final GDSII Layout](RISCV_CORE_Output.png)
