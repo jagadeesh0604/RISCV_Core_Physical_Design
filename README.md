@@ -1,5 +1,5 @@
-32-bit RISC-V Core: RTL-to-GDSII Implementation
-Using OpenLane & SkyWater 130nm PDK
+# 32-bit RISC-V Core: RTL-to-GDSII Implementation
+## Using OpenLane & SkyWater 130nm PDK
 🚀 Project Overview
 
 This repository contains the full physical implementation of a 32-bit RISC-V core. The project involves taking a synthesizable Verilog RTL through the complete Digital Implementation cycle—from synthesis to a DRC-clean GDSII layout.
